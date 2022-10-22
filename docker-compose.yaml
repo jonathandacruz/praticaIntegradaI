@@ -1,0 +1,41 @@
+version: "3.7"
+services:
+  postgres-server:
+    image: postgres:14.5
+    container_name: postgres-server
+    hostname: postgres-server
+    restart: on-failure
+    ports:
+      - "5432:5432"
+    networks:
+      - app-net
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: shopDB
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  httpd-server:
+    build:
+      context: .
+    container_name: httpd-server
+    hostname: httpd-server
+    restart: on-failure
+    ports:
+      - "80:80"
+    networks:
+      - apache-net
+    volumes:
+      - httpd_data:/usr/local/apache2/
+
+volumes:
+  httpd_data:
+networks:
+  apache-net:
+    driver: bridge
