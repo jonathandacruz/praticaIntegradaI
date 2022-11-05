@@ -1,9 +1,8 @@
-FROM httpd:2.4
-RUN apt-get install php -y
-COPY ./assets /usr/local/apache2/htdocs/public-html/
-COPY ./cadastro /usr/local/apache2/htdocs/public-html/
-COPY ./errors /usr/local/apache2/htdocs/public-html/
-COPY ./fragments /usr/local/apache2/htdocs/public-html/
-COPY ./shop /usr/local/apache2/htdocs/public-html/
-COPY ./.htaccess /usr/local/apache2/htdocs/public-html/
-COPY ./index.php /usr/local/apache2/htdocs/public-html/
+FROM tomsik68/xampp:7.3.7
+COPY ./assets /www/assets/
+COPY ./cadastro /www/cadastro/
+COPY ./errors /www/errors/
+COPY ./fragments /www/fragments/
+COPY ./shop /www/shop/
+COPY ./.htaccess /www/
+COPY ./index.php /www/

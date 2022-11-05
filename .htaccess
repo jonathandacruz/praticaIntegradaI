@@ -1,11 +1,11 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule "^produtos$" index.php [QSA,L]
+    RewriteRule "^home$" index.php [QSA,L]
     RewriteRule "^carrinho$" shop/carrinho.php [QSA,L]
     RewriteRule "^produto$" shop/produto.php [QSA,L]
     RewriteRule "^pagamento$" shop/pagamento.php [QSA,L]
-    RewriteRule "^cadastro/cliente$" cadastro/cliente.php [QSA,L]
-    RewriteRule "^cadastro/produto$" cadastro/produto.php [QSA,L]
+    RewriteRule "^cadastro-cliente$" cadastro/cliente.php [QSA,L]
+    RewriteRule "^cadastro-produto$" cadastro/produto.php [QSA,L]
     RewriteRule "^error$" errors/404.php [QSA,L]
 </IfModule>

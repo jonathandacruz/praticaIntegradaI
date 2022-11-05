@@ -15,15 +15,15 @@
 					<!-- menu start -->
 					<nav class="main-menu">
 						<ul>
-							<li><a href="#">Cadastro</a>
-								<ul class="sub-menu">
-									<li><a href="cadastro/cliente">Cliente</a></li>
-									<li><a href="cadastro/produto">Produto</a></li>
-								</ul>
-							</li>
-							<li><a href="produtos">Produtos</a></li>
+							<li><a href="home">Produtos</a></li>
 							<li><a href="carrinho">Carrinho</a></li>
 							<li><a href="pagamento">Pagamento</a></li>
+							<li><a href="#">Cadastro</a>
+								<ul class="sub-menu">
+									<li><a href="cadastro-cliente">Cliente</a></li>
+									<li><a href="cadastro-produto">Produto</a></li>
+								</ul>
+							</li>
 							<li>
 								<div class="header-icons">
 									<a class="shopping-cart" href="carrinho"><i class="fas fa-shopping-cart"></i></a>
