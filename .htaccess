@@ -14,6 +14,6 @@
 
     RewriteRule "^error$" view/errors/404.php [QSA,L]
 
-    RewriteRule "^/service/produto$" services/ItemService.php [QSA,L]
-    RewriteRule "^/service/pedido$" services/OrderService.php [QSA,L]
+    RewriteRule "^service/produto$" services/ItemService.php [QSA,L]
+    RewriteRule "^service/pedido$" services/OrderService.php [QSA,L]
 </IfModule>
