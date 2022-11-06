@@ -44,16 +44,16 @@ $(document).ready(function($){
             url: "service/produto",
             data: {item: itemStr},
             success: (response) => {
-                console.log(response);
-                console.log('OK!');
-                clearFields();
-                $('#img_row').fadeOut();
-                toastr.success('Produto cadastrado com sucesso!', `${response}`, {timeOut: 5000});
+                if (response) {
+                    toastr.error('Erro ao cadastrar o produto. Verifique!', `${response}`, {timeOut: 5000});
+                } else {
+                    clearFields();
+                    $('#img_row').fadeOut();
+                    toastr.success('Produto foi cadastrado com sucesso.', 'Produto cadastrado!', {timeOut: 5000});
+                }
             },
             error: (err) => {
-                console.log(err);
-                console.log('Deu Erro!');
-                toastr.error('Ocorreu um erro ao cadastrar o produto!', `${err.statusText}`, {timeOut: 5000});
+                toastr.error('Não foi possível fazer a requisição para a URL informada. Verifique!', `${err.statusText}`, {timeOut: 5000});
             }
           });
     });
@@ -64,8 +64,8 @@ $(document).ready(function($){
         $('#price').val('');
         $('#img_url').val('');
         $('#unit').val('');
-        $('.alert').alert();
-    }
+        $('#description').val('');
+    };
     
 
 });
