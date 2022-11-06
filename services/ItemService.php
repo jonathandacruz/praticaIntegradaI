@@ -3,15 +3,16 @@
 include("../config/connection.php");
 
 if (!empty($_POST['item'])) {
+    try {
+        $data = $_POST['item'];
 
-    $data = $_POST['item'];
+        $item = json_decode($data, true);
+        
+        saveItemDb($item);
 
-    $item = json_decode($data, true);
-
-    saveItemDb($item);
-
-    var_dump($item);
-
+    } catch(Exception $e) {
+        return $e->getMessage();
+    }
 }
 
 function getItemsDb() {
@@ -22,6 +23,6 @@ function saveItemDb($item) {
 
     $conn = getConnection();
     $stmt = $conn->prepare("INSERT INTO items (`name`, `category`, `price`, `img_url`, `unit`, `description`) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param('ssdsss', $item['name'], $item['category'], $item['price'], $item['img_url'], $item['unit'], $item['decription']);
+    $stmt->bind_param('ssdsss', $item['name'], $item['category'], $item['price'], $item['img_url'], $item['unit'], $item['description']);
     $stmt->execute();
 }
