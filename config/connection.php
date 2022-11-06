@@ -3,7 +3,7 @@
 function getConnection()
 {
     $user = 'root';
-    $pass = 'root';
+    $pass = '';
     $host = 'localhost';
     $port = 3306;
     $dbName = 'shopDB';
