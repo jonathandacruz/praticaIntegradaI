@@ -18,3 +18,5 @@
 <script src="assets/js/sticker.js"></script>
 <!-- main js -->
 <script src="assets/js/main.js"></script>
+<!-- toastr js -->
+<script src="assets/js/toastr.min.js"></script>

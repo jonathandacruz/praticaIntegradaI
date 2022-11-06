@@ -29,36 +29,20 @@
 			<div class="row">
 				<div class="col-lg-12 mb-5 mb-lg-0">
 					<div class="form-title">
-						<div class="alert alert-success alert-dismissible fade show" role="alert" id="success_message">
-							Produto cadastrado com sucesso!
-							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-
-						</div>
-						<div class="alert alert-danger alert-dismissible fade show" role="alert" id="fail_message">
-							Erro ao cadastrar o produto!
-							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-
-						</div>
 					</div>
-					<div id="form_status"></div>
 					<div class="contact-form">
-						<form method="POST" id="item-form">
+						<form method="POST" id="item-form" autocomplete="off">
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-4">
 									<label for="name">Nome do Produto*</label>
 									<input class="form-control" type="text" name="name" id="name" required>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-7">
 									<label for="img_url">URL da Imagem</label>
 									<input class="form-control" type="text" name="img_url" id="img_url" placeholder="http://... ou https://...">
 								</div>
-
 							</div>
-							<div class="row">
+							<div class="row mt-3">
 								<div class="form-group col-md-3">
 									<label for="category">Unidade de Medida*</label>
 									<select class="form-control form-select-lg" id="unit" required>
@@ -69,9 +53,9 @@
 										<option value="UN">Unidade</option>
 									</select>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-2">
 									<label for="price">Preço*</label>
-									<input class="form-control" type="number" name="price" id="price">
+									<input class="form-control" type="text" name="price" id="price" placeholder="1.00">
 								</div>
 								<div class="form-group col-md-3">
 									<label for="category">Categoria*</label>
