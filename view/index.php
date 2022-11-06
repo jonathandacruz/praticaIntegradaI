@@ -36,6 +36,7 @@
                             <li class="active" data-filter="*">Todas</li>
                             <li data-filter=".Frutas">Frutas</li>
                             <li data-filter=".Verduras">Verduras</li>
+                            <li data-filter=".Legumes">Legumes</li>
                         </ul>
                     </div>
                 </div>
@@ -47,7 +48,6 @@
 					$result = getItemsDb();
 					$items = mysqli_fetch_all($result);
 					foreach($items as $item) {
-						// var_dump($item);
 				?>
 				<div class="col-lg-4 col-md-6 text-center <?= $item[2]?>">
 					<div class="single-product-item">
