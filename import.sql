@@ -12,7 +12,7 @@ CREATE TABLE items (
     description VARCHAR(1000)
 );
 
-INSERT INTO `items` (`id`, `name`, `category`, `price`, `img_url`, `unit`) VALUES
+INSERT INTO `items` (`id`, `name`, `category`, `price`, `img_url`, `unit`, `description`) VALUES
 (NULL, 'Morango Diamante', 'Frutas', '12.50', 'https://acientistaagricola.pt/wp-content/uploads/2021/05/novo-3-1024x576.png', 'BDJ', ''),
 (NULL, 'Morango Albion', 'Frutas', '10.48', 'https://acientistaagricola.pt/wp-content/uploads/2021/05/novo-1-1024x576.png', 'KG', ''),
 (NULL, 'Abacaxi Roxo', 'Frutas', '9.99', 'https://i2.wp.com/files.agro20.com.br/uploads/2020/05/Tipos-de-abacaxi-2.jpg?w=1024&ssl=1', 'UN', ''),
