@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c615684-fba1-4ce7-9be3-69f0581c166b" name="Changes" comment="" />
+    <list default="true" id="8c615684-fba1-4ce7-9be3-69f0581c166b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadastro/cliente.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadastro/produto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errors/404.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fragments/base.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fragments/copyright.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fragments/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fragments/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fragments/loader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fragments/scripts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fragments/styles.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelo.json" beforeDir="false" afterPath="$PROJECT_DIR$/modelo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/carrinho.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/pagamento.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/produto.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,7 +46,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false"
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/MAMP/htdocs/praticaIntegrada",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -35,8 +61,12 @@
       <option name="presentableId" value="Default" />
       <updated>1667652943015</updated>
       <workItem from="1667652948491" duration="19000" />
+      <workItem from="1667672643671" duration="2639000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -1,25 +1,27 @@
-{
-    "url_img": "https://....",
-    "name": "Morango",
-    "price": 12.57,
-    "quantity": 1.2,
-    "total": 15.08
-},
-{
-    "carrinho": [
-        {
-            "url_img": "https://....",
-            "name": "Morango",
-            "price": 12.57,
-            "quantity": 1.2,
-            "total": 15.08
-        },
-        {
-            "url_img": "https://....",
-            "name": "Abacaxi",
-            "price": 12.57,
-            "quantity": 1.2,
-            "total": 15.08
-        }
-    ]
-}
+[
+    {
+        "url_img": "https://....",
+        "name": "Morango",
+        "price": 12.57,
+        "quantity": 1.2,
+        "total": 15.08
+    },
+    {
+        "carrinho": [
+            {
+                "url_img": "https://....",
+                "name": "Morango",
+                "price": 12.57,
+                "quantity": 1.2,
+                "total": 15.08
+            },
+            {
+                "url_img": "https://....",
+                "name": "Abacaxi",
+                "price": 12.57,
+                "quantity": 1.2,
+                "total": 15.08
+            }
+        ]
+    }
+]
