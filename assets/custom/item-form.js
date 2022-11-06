@@ -27,19 +27,21 @@ $(document).ready(function($){
         let vPrice = $('#price').val();
         let vUrl = $('#img_url').val();
         let vUnit = $('#unit').val();
+        let vDesc = $('#description').val();
     
         let item = { name: vName, 
                      category: vCategory,
                      price: vPrice,
                      img_url: vUrl,
-                     unit: vUnit
+                     unit: vUnit,
+                     description: vDesc
                     };
     
         let itemStr = JSON.stringify(item);
         
         $.ajax({
             type: "POST",
-            url: "produto-service",
+            url: "service/produto",
             data: {item: itemStr},
             success: (response) => {
                 console.log(response);

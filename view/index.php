@@ -52,7 +52,7 @@
 				<div class="col-lg-4 col-md-6 text-center <?= $item[2]?>">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="<?= $item[4] ? $item[4] : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl93jGvfkgObvJTYey-UbcG3oRDyHXYrlFoz0-ID0JMA&s'?>" height="200px" width="200px" alt=""></a>
+							<a href="<?="produto?id=$item[0]"?>"><img src="<?= $item[4] ? $item[4] : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl93jGvfkgObvJTYey-UbcG3oRDyHXYrlFoz0-ID0JMA&s'?>" height="200px" width="200px" alt=""></a>
 						</div>
 						<h3 class="product-name"><?=$item[1]?></h3>
 						<p class="product-price">R$<?=$item[3]?><span><?=$item[5]?></span></p>

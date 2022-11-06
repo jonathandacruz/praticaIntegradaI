@@ -21,7 +21,7 @@ function getItemsDb() {
 function saveItemDb($item) {
 
     $conn = getConnection();
-    $stmt = $conn->prepare("INSERT INTO items (`name`, `category`, `price`, `img_url`, `unit`) VALUES (?, ?, ?, ?, ?)");
-    $stmt->bind_param('ssdss', $item['name'], $item['category'], $item['price'], $item['img_url'], $item['unit']);
+    $stmt = $conn->prepare("INSERT INTO items (`name`, `category`, `price`, `img_url`, `unit`, `description`) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param('ssdsss', $item['name'], $item['category'], $item['price'], $item['img_url'], $item['unit'], $item['decription']);
     $stmt->execute();
 }

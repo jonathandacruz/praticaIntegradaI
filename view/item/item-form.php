@@ -68,10 +68,16 @@
 								</div>
 							</div>
 
-							<div class="row mb-5" id="img_row">
+							<div class="row mt-3 mb-5">
 								<div class="col-md-6">
+									<label for="description">Descrição</label>
+									<textarea class="form-control" name="description" id="description" cols="30" rows="5"></textarea>
+								</div>
+								<div class="col-md-4" id="img_row">
 									<img src="" alt="" id="img_loader" height="200px" width="200px">
 								</div>
+							</div>
+
 							</div>
 
 							<p><input type="submit" value="Salvar"></p>
@@ -90,7 +96,7 @@
 	?>
 
 	<!-- Custom Scripts -->
-	<script src="assets/custom/items.js"></script>
+	<script src="assets/custom/item-form.js"></script>
 
 </body>
 

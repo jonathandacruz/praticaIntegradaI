@@ -2,11 +2,18 @@
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule "^home$" view/index.php [QSA,L]
-    RewriteRule "^carrinho$" view/shop/carrinho.php [QSA,L]
-    RewriteRule "^produto$" view/shop/produto.php [QSA,L]
-    RewriteRule "^pagamento$" view/shop/pagamento.php [QSA,L]
-    RewriteRule "^cadastro-cliente$" view/cadastro/cliente.php [QSA,L]
-    RewriteRule "^cadastro-produto$" view/cadastro/produto.php [QSA,L]
+    
+    RewriteRule "^produto.*" view/item/item-view.php [QSA,L]
+    RewriteRule "^cliente.*" view/customer/customer-view.php [QSA,L]
+
+    RewriteRule "^cadastro-cliente$" view/customer/customer-form.php [QSA,L]
+    RewriteRule "^cadastro-produto$" view/item/item-form.php [QSA,L]
+    
+    RewriteRule "^carrinho$" view/shop/cart.php [QSA,L]
+    RewriteRule "^pagamento$" view/shop/checkout.php [QSA,L]
+
     RewriteRule "^error$" view/errors/404.php [QSA,L]
-    RewriteRule "^produto-service$" services/ItemService.php [QSA,L]
+
+    RewriteRule "^/service/produto$" services/ItemService.php [QSA,L]
+    RewriteRule "^/service/pedido$" services/OrderService.php [QSA,L]
 </IfModule>

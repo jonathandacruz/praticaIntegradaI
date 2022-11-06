@@ -8,14 +8,16 @@ class Item
     private $price;
     private $img_url;
     private $unit;
+    private $description;
 
-    public function __construct($name, $category, $price, $img_url, $unit)
+    public function __construct($name, $category, $price, $img_url, $unit, $description)
     {
         $this->name = $name;
         $this->category = $category;
         $this->price = $price;
         $this->img_url = $img_url;
         $this->unit = $unit;
+        $this->description = $description;
     }
 
     public function getId()
@@ -71,6 +73,16 @@ class Item
     public function setUnit($unit): void
     {
         $this->unit = $unit;
+    }
+
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    public function setDescription($description): void
+    {
+        $this->description = $description;
     }
 
 }
