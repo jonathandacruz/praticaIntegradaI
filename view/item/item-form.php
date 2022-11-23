@@ -97,6 +97,7 @@
 
 	<!-- Custom Scripts -->
 	<script src="assets/custom/item-form.js"></script>
+	<script src="assets/js/jquery.inputmask.min.js"></script>
 
 </body>
 
