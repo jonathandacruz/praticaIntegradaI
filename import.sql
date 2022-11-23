@@ -15,7 +15,7 @@ CREATE TABLE customers (
     complement VARCHAR(50),
     district VARCHAR(50) NOT NULL,
     city VARCHAR(50) NOT NULL,
-    state VARCHAR(50) NOT NULL,
+    state VARCHAR(2) NOT NULL,
     zipcode VARCHAR(8) NOT NULL
 );
 
