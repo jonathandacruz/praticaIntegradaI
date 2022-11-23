@@ -1,13 +1,8 @@
 $(document).ready(function ($) {
 
-    $('#name').inputmask('a{100}', {'placeholder': ''});
-    $('#email').inputmask('*{100}', {'placeholder': ''});
-    $('#phone').inputmask('(9{2}) 9{4}[9]-9{4}', {'placeholder': '', 'removeMaskOnSubmit': true});
-    $('#address').inputmask('*{50}', {'placeholder': ''});
-    $('#complement').inputmask('*{50}', {'placeholder': ''});
-    $('#city').inputmask('a{50}', {'placeholder': ''});
+    $('#phone').inputmask('(9{2}) 9{4}[9]-9{4}', {'placeholder': ' ', 'removeMaskOnSubmit': true});
     $('#state').inputmask('a{2}', {'placeholder': ''});
-    $('#zipcode').inputmask('9{5}-9{3}', {'placeholder': '', 'removeMaskOnSubmit': true});
+    $('#zipcode').inputmask('9{5}-9{3}', {'placeholder': ' ', 'removeMaskOnSubmit': true});
 
     $('#customer-form').on('submit', function (e) {
         e.preventDefault();
