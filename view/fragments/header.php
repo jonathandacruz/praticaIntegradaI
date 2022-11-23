@@ -6,7 +6,7 @@
 				<div class="main-menu-wrap">
 					<!-- logo -->
 					<div class="site-logo">
-						<a href="produtos">
+						<a href="home">
 							<img src="assets/img/logo.png" alt="">
 						</a>
 					</div>

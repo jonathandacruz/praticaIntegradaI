@@ -176,14 +176,15 @@
         var productName = element.parentNode.querySelector(".product-name").textContent
         var productPrice = element.parentNode.querySelector(".product-price").textContent
         var productQuantity = element.parentNode.querySelector(".product-quantity").value
-        
-
-        alert(productName)
+        var productImage = element.parentNode.querySelector(".product-image").children[0].children[0].getAttribute('src');
+      
+        console.log(productImage)
 
         var cartItem = {
             productName: productName,
             productPrice: productPrice,
-            productQuantity: productQuantity
+            productQuantity: productQuantity,
+            productImage: productImage
         };
         var cartItemJSON = JSON.stringify(cartItem);
     
@@ -197,7 +198,11 @@
         var cartJSON = JSON.stringify(cartArray);
         sessionStorage.setItem('shopping-cart', cartJSON);
 
-
+        $('.cart-add-notice').fadeIn().html('Produto adicionado no carrinho!');
+        setTimeout(function(){ 
+        $('.cart-add-notice').fadeOut();
+        }, 2000);
+       
     }
 
     function emptyCart() {
