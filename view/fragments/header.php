@@ -18,10 +18,11 @@
 							<li><a href="home">Produtos</a></li>
 							<li><a href="carrinho">Carrinho</a></li>
 							<li><a href="pagamento">Pagamento</a></li>
-							<li><a href="#">Cadastro</a>
+							<li><a href="#">Área Administrativa</a>
 								<ul class="sub-menu">
-									<li><a href="cadastro-cliente">Cliente</a></li>
-									<li><a href="cadastro-produto">Produto</a></li>
+									<li><a href="cadastro-cliente">Clientes</a></li>
+									<li><a href="cadastro-produto">Produtos</a></li>
+									<li><a href="#">Pedidos</a></li>
 								</ul>
 							</li>
 							<li>
