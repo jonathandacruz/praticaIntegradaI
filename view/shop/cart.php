@@ -58,9 +58,9 @@
 					<div class="coupon-section">
 						<h3>Aplicar cupom</h3>
 						<div class="coupon-form-wrap">
-							<form action="index.html">
+							<form action="pagamento">
 								<p><input type="text" placeholder="Cupom de Desconto"></p>
-								<p><input type="submit" value="Aplicar"></p>
+								<p><input type="submit" value="Pagar agora"></p>
 							</form>
 						</div>
 					</div>
