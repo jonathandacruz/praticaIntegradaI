@@ -56,6 +56,14 @@
                 sessionStorage.removeItem('shopping-cart');
             }
         }
+
+        $(".boxed-btn").on("click", function() {
+            toastr.success('Compra finalizada com sucesso!', 'Compra finalizada com sucesso!', {timeOut: 5000});
+            emptyCart()
+             
+        });
+
+
     })
 
 }(jQuery));
