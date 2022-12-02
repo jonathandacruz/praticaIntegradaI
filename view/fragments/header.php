@@ -20,9 +20,9 @@
 							<li><a href="pagamento">Pagamento</a></li>
 							<li><a href="#">Área Administrativa</a>
 								<ul class="sub-menu">
-									<li><a href="cadastro-cliente">Clientes</a></li>
-									<li><a href="cadastro-produto">Produtos</a></li>
-									<li><a href="#">Pedidos</a></li>
+									<li><a href="clientes">Clientes</a></li>
+									<li><a href="produtos">Produtos</a></li>
+									<li><a href="pedidos">Pedidos</a></li>
 								</ul>
 							</li>
 							<li>

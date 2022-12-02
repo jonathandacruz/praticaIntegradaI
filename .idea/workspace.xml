@@ -2,30 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c615684-fba1-4ce7-9be3-69f0581c166b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/customer/customer-list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadastro/cliente.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadastro/produto.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errors/404.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fragments/base.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fragments/copyright.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fragments/footer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fragments/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fragments/loader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fragments/scripts.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fragments/styles.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelo.json" beforeDir="false" afterPath="$PROJECT_DIR$/modelo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/carrinho.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/pagamento.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/produto.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="ComposerSettings">
     <execution />
@@ -36,7 +22,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectId" id="2H83ZtnH537ayO9PROf2UDvsV0x" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,11 +39,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "C:/MAMP/htdocs/praticaIntegrada",
+    "last_opened_file_path": "C:/Users/Daia/IdeaProjects/praticaIntegradaI/view/customer",
     "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+    "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Daia\IdeaProjects\praticaIntegradaI\view\customer" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,6 +60,8 @@
       <updated>1667652943015</updated>
       <workItem from="1667652948491" duration="19000" />
       <workItem from="1667672643671" duration="2639000" />
+      <workItem from="1670009422481" duration="318000" />
+      <workItem from="1670009881825" duration="173000" />
     </task>
     <servers />
   </component>

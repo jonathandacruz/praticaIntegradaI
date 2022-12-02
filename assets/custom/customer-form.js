@@ -4,6 +4,54 @@ $(document).ready(function ($) {
     $('#state').inputmask('a{2}', {'placeholder': ''});
     $('#zipcode').inputmask('9{5}-9{3}', {'placeholder': ' ', 'removeMaskOnSubmit': true});
 
+    $('#customer-form-update').on('submit', function (e) {
+        e.preventDefault();
+
+        let vId = $('#id').val();
+        let vEmail = $('#email').val();
+        let vPhone = $('#phone').val();
+        let vAddress = $('#address').val();
+        let vNumber = $('#number').val();
+        let vComplement = $('#complement').val();
+        let vDistrict = $('#district').val();
+        let vZipcode = $('#zipcode').val();
+        let vState = $('#state').val();
+        let vCity = $('#city').val();
+
+        let customer = {
+            id: vId,
+            email: vEmail,
+            phone: vPhone,
+            address: vAddress,
+            number: vNumber,
+            complement: vComplement,
+            district: vDistrict,
+            zipcode: vZipcode,
+            state: vState,
+            city: vCity
+        };
+
+        let customerStr = JSON.stringify(customer);
+
+        $.ajax({
+            type: "POST",
+            url: "service/clienteUpdate",
+            data: { customer: customerStr },
+            success: (response) => {
+                if (response) {
+                    toastr.error('Erro ao cadastrar o cliente. Verifique!', `${response}`, { timeOut: 5000 });
+                } else {
+                    clearFields();
+                    $('#img_row').fadeOut();
+                    toastr.success('Cliente foi cadastrado com sucesso.', 'Cliente cadastrado!', { timeOut: 5000 });
+                }
+            },
+            error: (err) => {
+                toastr.error('Não foi possível fazer a requisição para a URL informada. Verifique!', `${err.statusText}`, { timeOut: 5000 });
+            }
+        });
+    });
+
     $('#customer-form').on('submit', function (e) {
         e.preventDefault();
 
@@ -35,14 +83,13 @@ $(document).ready(function ($) {
 
         $.ajax({
             type: "POST",
-            url: "service/cliente",
+            url: "service/clienteSave",
             data: { customer: customerStr },
             success: (response) => {
                 if (response) {
                     toastr.error('Erro ao cadastrar o cliente. Verifique!', `${response}`, { timeOut: 5000 });
                 } else {
                     clearFields();
-                    $('#img_row').fadeOut();
                     toastr.success('Cliente foi cadastrado com sucesso.', 'Cliente cadastrado!', { timeOut: 5000 });
                 }
             },

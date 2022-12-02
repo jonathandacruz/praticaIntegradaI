@@ -3,18 +3,32 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule "^home$" view/index.php [QSA,L]
     
-    RewriteRule "^produto.*" view/item/item-view.php [QSA,L]
-    RewriteRule "^cliente.*" view/customer/customer-view.php [QSA,L]
-
+    RewriteRule "^produto-id-.*" view/item/item-view.php [QSA,L]
+    RewriteRule "^cliente.id-.*" view/customer/customer-view.php [QSA,L]
+    
+    RewriteRule "^clientes$" view/customer/customer-list.php [QSA,L]
     RewriteRule "^cadastro-cliente$" view/customer/customer-form.php [QSA,L]
+    RewriteRule "^editar-cliente" view/customer/customer-form-update.php?$1=$2 [QSA,L]
+    
+    RewriteRule "^produtos$" view/item/item-list.php [QSA,L]
     RewriteRule "^cadastro-produto$" view/item/item-form.php [QSA,L]
+    
+    RewriteRule "^pedidos$" view/order/order-list.php [QSA,L]
+    RewriteRule "^detalhe-pedido$" view/order/order-detail.php [QSA,L]
     
     RewriteRule "^carrinho$" view/shop/cart.php [QSA,L]
     RewriteRule "^pagamento$" view/shop/checkout.php [QSA,L]
-
+    
     RewriteRule "^error$" view/errors/404.php [QSA,L]
-
-    RewriteRule "^service/cliente$" services/CustomerService.php [QSA,L]
-    RewriteRule "^service/produto$" services/ItemService.php [QSA,L]
-    RewriteRule "^service/pedido$" services/OrderService.php [QSA,L]
-</IfModule>
+    
+    RewriteRule "^service/clienteSave$" services/CustomerSave.php [QSA,L]
+    RewriteRule "^service/clienteUpdate$" services/CustomerUpdate.php [QSA,L]
+    RewriteRule "^service/clienteDelete$" services/CustomerDelete.php [QSA,L]
+    
+    RewriteRule "^service/produtoSave$" services/ItemSave.php [QSA,L]
+    RewriteRule "^service/produtoUpdate$" services/ItemUpdate.php [QSA,L]
+    
+    RewriteRule "^service/pedidoSave$" services/OrderSave.php [QSA,L]
+    RewriteRule "^service/pedidoUpdate$" services/OrderUpdate.php [QSA,L]
+    
+    </IfModule>
