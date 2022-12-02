@@ -32,7 +32,7 @@
 						    <div class="card-header" id="headingOne">
 						      <h5 class="mb-0">
 						        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						          Billing Address
+						          Dados para entrega
 						        </button>
 						      </h5>
 						    </div>
@@ -41,11 +41,11 @@
 						      <div class="card-body">
 						        <div class="billing-address-form">
 						        	<form action="index.html">
-						        		<p><input type="text" placeholder="Name"></p>
+						        		<p><input type="text" placeholder="Nome"></p>
 						        		<p><input type="email" placeholder="Email"></p>
-						        		<p><input type="text" placeholder="Address"></p>
-						        		<p><input type="tel" placeholder="Phone"></p>
-						        		<p><textarea name="bill" id="bill" cols="30" rows="10" placeholder="Say Something"></textarea></p>
+						        		<p><input type="text" placeholder="Endereço"></p>
+						        		<p><input type="tel" placeholder="Telefone"></p>
+						        		<p><textarea name="bill" id="bill" cols="30" rows="10" placeholder="Observações da compra"></textarea></p>
 						        	</form>
 						        </div>
 						      </div>
@@ -55,34 +55,36 @@
 						    <div class="card-header" id="headingTwo">
 						      <h5 class="mb-0">
 						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						          Shipping Address
+						          Opções de pagamento
 						        </button>
 						      </h5>
 						    </div>
 						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 						      <div class="card-body">
 						        <div class="shipping-address-form">
-						        	<p>Your shipping address form is here.</p>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+									<label class="form-check-label" for="flexRadioDefault1">
+									Cartão de crédito
+									</label>
+								</div>	
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+										<label class="form-check-label" for="flexRadioDefault2">
+										Pix - Dinheiro (Na entrega)
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+										<label class="form-check-label" for="flexRadioDefault3">
+										Cartão de débito
+										</label>
+								   </div>
 						        </div>
 						      </div>
 						    </div>
 						  </div>
-						  <div class="card single-accordion">
-						    <div class="card-header" id="headingThree">
-						      <h5 class="mb-0">
-						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						          Card Details
-						        </button>
-						      </h5>
-						    </div>
-						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-						      <div class="card-body">
-						        <div class="card-details">
-						        	<p>Your card details goes here.</p>
-						        </div>
-						      </div>
-						    </div>
-						  </div>
+					 
 						</div>
 
 					</div>
@@ -93,8 +95,8 @@
 						<table class="order-details">
 							<thead>
 								<tr>
-									<th>Your order Details</th>
-									<th>Price</th>
+									<th>Ordem de compra</th>
+									<th>Valor total</th>
 								</tr>
 							</thead>
 							<tbody class="order-details-body">
@@ -116,21 +118,10 @@
 								</tr>
 							</tbody>
 							<tbody class="checkout-details">
-								<tr>
-									<td>Subtotal</td>
-									<td>$190</td>
-								</tr>
-								<tr>
-									<td>Shipping</td>
-									<td>$50</td>
-								</tr>
-								<tr>
-									<td>Total</td>
-									<td>$240</td>
-								</tr>
+							 
 							</tbody>
 						</table>
-						<a href="#" class="boxed-btn">Place Order</a>
+						<a href="#" class="boxed-btn">Finalizar pedido</a>
 					</div>
 				</div>
 			</div>
@@ -143,6 +134,6 @@
 		include_once("../fragments/copyright.php");
 		require_once("../fragments/scripts.php");
 	?>
-	
+	<script src="assets/js/checkout.js"></script>
 </body>
 </html>
