@@ -22,7 +22,6 @@
 								<ul class="sub-menu">
 									<li><a href="clientes">Clientes</a></li>
 									<li><a href="produtos">Produtos</a></li>
-									<li><a href="pedidos">Pedidos</a></li>
 								</ul>
 							</li>
 							<li>

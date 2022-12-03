@@ -17,7 +17,7 @@ if (!empty($_POST['customer'])) {
 
 function update($dataDB) {
     $conn = getConnection();
-    $stmt = $conn->prepare("UPDATE customers SET `name` = ?, `email` = ?, `phone` = ?, `address` = ?, `number` = ?, `complement` = ?, `city` = ?, `state` = ?, `zipcode` = ? WHERE id = ?");
-    $stmt->bind_param('ssssissssi', $dataDB['name'], $dataDB['email'], $dataDB['phone'], $dataDB['address'], $dataDB['number'], $dataDB['complement'], $dataDB['city'], $dataDB['state'], $dataDB['zipcode'], $dataDB['id']);
+    $stmt = $conn->prepare("UPDATE customers SET `email` = ?, `phone` = ?, `address` = ?, `number` = ?, `complement` = ?, `city` = ?, `state` = ?, `district` = ?,  `zipcode` = ? WHERE id = ?");
+    $stmt->bind_param('sssisssssi', $dataDB['email'], $dataDB['phone'], $dataDB['address'], $dataDB['number'], $dataDB['complement'], $dataDB['city'], $dataDB['state'], $dataDB['district'], $dataDB['zipcode'], $dataDB['id']);
     $stmt->execute();
 }

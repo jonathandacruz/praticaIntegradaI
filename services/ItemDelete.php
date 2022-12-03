@@ -15,8 +15,7 @@ if (!empty($_GET['id'])) {
 
 function delete($id) {
     $conn = getConnection();
-    $stmt = $conn->prepare("DELETE FROM customers WHERE id = ?");
+    $stmt = $conn->prepare("DELETE FROM items WHERE id = ?");
     $stmt->bind_param('i', $id);
     $stmt->execute();
-    header("Location: /praticaintegrada/clientes");
 }

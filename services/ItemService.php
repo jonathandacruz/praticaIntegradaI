@@ -19,8 +19,15 @@ function getItemsDb() {
     return getConnection()->query("SELECT * FROM items ORDER BY name ASC");
 }
 
-function saveItemDb($item) {
+function getItemByIdDb($id) {
+    $stmt = getConnection()->prepare("SELECT * FROM items WHERE id = ?");
+    $stmt->bind_param('i', $id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    return $result->fetch_assoc();
+}
 
+function saveItemDb($item) {
     $conn = getConnection();
     $stmt = $conn->prepare("INSERT INTO items (`name`, `category`, `price`, `img_url`, `unit`, `description`) VALUES (?, ?, ?, ?, ?, ?)");
     $stmt->bind_param('ssdsss', $item['name'], $item['category'], $item['price'], $item['img_url'], $item['unit'], $item['description']);

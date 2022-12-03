@@ -12,6 +12,7 @@
     
     RewriteRule "^produtos$" view/item/item-list.php [QSA,L]
     RewriteRule "^cadastro-produto$" view/item/item-form.php [QSA,L]
+    RewriteRule "^editar-produto" view/item/item-form-update.php?$1=$2 [QSA,L]
     
     RewriteRule "^pedidos$" view/order/order-list.php [QSA,L]
     RewriteRule "^detalhe-pedido$" view/order/order-detail.php [QSA,L]
@@ -23,12 +24,10 @@
     
     RewriteRule "^service/clienteSave$" services/CustomerSave.php [QSA,L]
     RewriteRule "^service/clienteUpdate$" services/CustomerUpdate.php [QSA,L]
-    RewriteRule "^service/clienteDelete$" services/CustomerDelete.php [QSA,L]
+    RewriteRule "^service/clienteDelete" services/CustomerDelete.php?$1=$2 [QSA,L]
     
-    RewriteRule "^service/produtoSave$" services/ItemSave.php [QSA,L]
+    RewriteRule "^service/produtoService$" services/ItemService.php [QSA,L]
     RewriteRule "^service/produtoUpdate$" services/ItemUpdate.php [QSA,L]
-    
-    RewriteRule "^service/pedidoSave$" services/OrderSave.php [QSA,L]
-    RewriteRule "^service/pedidoUpdate$" services/OrderUpdate.php [QSA,L]
+    RewriteRule "^service/produtoDelete" services/ItemDelete.php?$1=$2 [QSA,L]
     
     </IfModule>

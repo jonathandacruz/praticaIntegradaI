@@ -50,6 +50,9 @@ $(document).ready(function ($) {
                 toastr.error('Não foi possível fazer a requisição para a URL informada. Verifique!', `${err.statusText}`, { timeOut: 5000 });
             }
         });
+        setTimeout(() => {
+            window.location.href = "clientes";
+        }, 1000);
     });
 
     $('#customer-form').on('submit', function (e) {
@@ -97,6 +100,9 @@ $(document).ready(function ($) {
                 toastr.error('Não foi possível fazer a requisição para a URL informada. Verifique!', `${err.statusText}`, { timeOut: 5000 });
             }
         });
+        setTimeout(() => {
+            window.location.href = "clientes";
+        }, 1000);
     });
 
     function clearFields() {

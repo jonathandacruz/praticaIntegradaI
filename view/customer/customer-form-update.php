@@ -35,6 +35,7 @@
 					<div class="contact-form">
 						<form method="POST" id="customer-form-update" autocomplete="off">
 							<?php $customer = getCustomerById($_GET['id']);
+								$id = str_replace(' ', '&nbsp;', $customer['id']);
 								$name = str_replace(' ', '&nbsp;', $customer['name']);
 								$email = str_replace(' ', '&nbsp;', $customer['email']);
 								$phone = str_replace(' ', '&nbsp;', $customer['phone']);
@@ -47,50 +48,51 @@
 								$zipcode = str_replace(' ', '&nbsp;', $customer['zipcode']);
 							 ?>
 							<div class="row">
+								<input hidden type="text" name="id" id="id" value="<?= $id ?>">
 								<div class="col-md-4">
 									<label for="name">Nome</label>
-									<input class="form-control" type="text" name="name" id="name" disabled value=<?= $name ?> >
+									<input class="form-control" type="text" name="name" id="name" disabled value="<?= $name ?>">
 								</div>
 								<div class="col-md-5">
 									<label for="email">Email*</label>
-									<input class="form-control" type="email" name="email" id="email" required value=<?= $email ?>>
+									<input class="form-control" type="email" name="email" id="email" required value="<?= $email ?>">
 								</div>
 								<div class="col-md-3">
 									<label for="phone">Telefone*</label>
-									<input class="form-control" type="text" name="phone" id="phone" value=<?= $phone ?> required>
+									<input class="form-control" type="text" name="phone" id="phone" required value="<?= $phone ?>">
 								</div>
 							</div>
 							<div class="row mt-3">
 								<div class="col-md-3">
 									<label for="zipcode">CEP*</label>
-									<input class="form-control" type="text" name="zipcode" id="zipcode" value=<?= $zipcode ?> required>
+									<input class="form-control" type="text" name="zipcode" id="zipcode" required value="<?= $zipcode ?>">
 								</div>
 								<div class="col-md-4">
 									<label for="address">Logradouro*</label>
-									<input class="form-control" type="text" name="address" id="address" required value=<?= $address ?> >
+									<input class="form-control" type="text" name="address" id="address" required value="<?= $address ?>">
 								</div>
 								<div class="col-md-2">
 									<label for="number">Nº*</label>
-									<input class="form-control" type="number" name="number" id="number" value=<?= $number ?> >
+									<input class="form-control" type="number" name="number" id="number" value="<?= $number ?>">
 								</div>
 								<div class="col-md-3">
 									<label for="complement">Complemento</label>
-									<input class="form-control" type="text" name="complement" id="complement" value=<?= $complement ?> >
+									<input class="form-control" type="text" name="complement" id="complement" value="<?= $complement ?>">
 								</div>
 							</div>
 
 							<div class="row mt-3 mb-5">
 								<div class="col-md-4">
 									<label for="district">Bairro*</label>
-									<input class="form-control" type="text" name="district" id="district" required value=<?= $district ?> >
+									<input class="form-control" type="text" name="district" id="district" required value="<?= $district ?>">
 								</div>
 								<div class="col-md-2">
 									<label for="state">Estado*</label>
-									<input class="form-control" type="text" name="state" id="state" required value=<?= $state ?> >
+									<input class="form-control" type="text" name="state" id="state" required value="<?= $state ?>">
 								</div>
 								<div class="col-md-4">
 									<label for="city">Cidade*</label>
-									<input class="form-control" type="text" name="city" id="city" required value=<?= $city ?> >
+									<input class="form-control" type="text" name="city" id="city" required value="<?= $city ?>">
 								</div>
 							</div>
 

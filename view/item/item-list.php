@@ -1,4 +1,5 @@
-<?php include('../../services/CustomerService.php'); ?>
+<?php include('../../services/ItemList.php'); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,7 +10,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="Responsive Bootstrap4 Shop Template">
 
-	<?php $PAGE = "Clientes"; ?>
+	<?php $PAGE = "Produtos"; ?>
 	<title>
 		<?= $PAGE ?>
 	</title>
@@ -32,17 +33,15 @@
 			<div class="row">
 				<div class="col-lg-12 mb-5 mb-lg-0">
 					<table class="table table-sm">
-						<a href="cadastro-cliente" class="btn btn-success btn-sm">Cadastrar</a>
+						<a href="cadastro-produto" class="btn btn-success btn-sm">Cadastrar</a>
 						<thead>
 							<tr>
 								<th scope="col">#</th>
-								<th scope="col">Nome</th>
-								<th scope="col">E-mail</th>
-								<th scope="col">Telefone</th>
-								<th scope="col">Endereço</th>
-								<th scope="col">Bairro</th>
-								<th scope="col">Cidade</th>
-								<th scope="col">Estado</th>
+								<th scope="col">Produto</th>
+								<th scope="col">Imagem</th></th>
+								<th scope="col">Unidade Venda</th>
+								<th scope="col">Preço</th>
+								<th scope="col">Categoria</th>
 								<th scope="col">Ações</th>
 							</tr>
 						</thead>
@@ -53,15 +52,13 @@
 							<tr>
 								<th scope="row"><?= $row['id'] ?></th>
 								<td><?= $row['name'] ?></td>
-								<td><?= $row['email'] ?></td>
-								<td><?= $row['phone'] ?></td>
-								<td><?= $row['address'] . ", Nº " . $row['number']?></td>
-								<td><?= $row['district'] ?></td>
-								<td><?= $row['city'] ?></td>
-								<td><?= $row['state'] ?></td>
+								<td><img src="<?= $row['img_url'] ?>" width="50px" height="50px"></td>
+								<td><?= $row['unit'] ?></td>
+								<td><?= 'R$' . $row['price'] ?></td>
+								<td><?= $row['category'] ?></td>
 								<td>
-									<a href="editar-cliente?id=<?= $row['id'] ?>" class="btn btn-primary btn-sm">Editar</a>
-									<a href="service/clienteDelete?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm" id="btnExcluir">Excluir</a>
+									<a href="editar-produto?id=<?= $row['id'] ?>" class="btn btn-primary btn-sm">Editar</a>
+									<a href="service/produtoDelete?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm">Excluir</a>
 								</td>
 							</tr>
 							<?php } closeConnection(); ?>
@@ -72,6 +69,7 @@
 		</div>
 	</div>
 	<!-- end contact form -->
+	
 
 	<?php
 		include_once("../fragments/footer.php");
